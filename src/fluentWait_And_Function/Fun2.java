@@ -8,7 +8,9 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.base.Function;
 
@@ -18,6 +20,7 @@ public class Fun2 {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://toolsqa.com/automation-practice-switch-windows/");
  
+
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
 		wait.pollingEvery(250,  TimeUnit.MILLISECONDS);
 		wait.withTimeout(2, TimeUnit.MINUTES);
@@ -33,9 +36,15 @@ public class Fun2 {
 						}
 						return element;
 					}
-				};
+		};
  
 		wait.until(function);
+
+		WebDriverWait driverWait = new WebDriverWait(driver, 10);
+		WebElement element = driverWait.until(ExpectedConditions
+				.presenceOfElementLocated(By.id("target")));
+		element.click();
+		
 	}
  
 }
