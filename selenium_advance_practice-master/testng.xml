@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1" parallel="classes" thread-count="2"
+ configurefailurepolicy="continue" >
+  <test name="Regression suite 1"  > 
+   <!--  <classes>
+      <class name="tests.ClassFour"/>
+      <class name="tests.ClassOne"/>
+     <class name="tests.ClassThree"/>
+     <class name="tests.ClassTwo"/>
+    </classes> -->
+    <packages>
+    	<package name="tests"></package>
+    </packages>
+ </test>
+</suite>
