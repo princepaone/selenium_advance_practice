@@ -2,6 +2,7 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -23,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                    <span>C:\Users\Pavan\AppData\Local\Temp\testng-eclipse-1978469271\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="handling_authentication_window_popUp.HandlingAuthentication_PopUp" hash-for-method="testBasicAuth_Firefox">testBasicAuth_Firefox</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="exporting_CSV_And_Downloading.ExportExample" hash-for-method="testExportAllRecords">testExportAllRecords</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,34 +117,79 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">handling_authentication_window_popUp.HandlingAuthentication_PopUp</span>
+              <img src="failed.png"/>
+              <span class="class-name">exporting_CSV_And_Downloading.ExportExample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBasicAuth_Firefox">
-                  </a> <!-- testBasicAuth_Firefox -->
-                  <span class="method-name">testBasicAuth_Firefox</span>
+                  <a name="testExportAllRecords">
+                  </a> <!-- testExportAllRecords -->
+                  <span class="method-name">testExportAllRecords</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: Malformed URL: appURL is not a valid URL.
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;pavan&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAMawMkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51XS2/jNhC+91cUPrVAzCSb7mV7SpMUKBA0xabBXhYgKGokMaZIlkNa9r/vUJLjh2Qp2ZNliq+Z7zGjiOC581D8ssi8begfQ1FA+6xMyWqhG+GBgRGZhnxx8XMhNMKvv/8U9ytzEWiOsz6kJRUIHaruP6NJayVn1u9OrkA78LfOITOwpidc0W3W8K+9V7iitYsAm3ApcX0hnNNKiqCsudwsa4SNBH00OhzZLIdja5OzGvsXqhYlXDpT9k+vDsqL9sgq1Lp7clooc7RFjY31+fFJtV4ch2gg0KwVq0JwzFUKq+0yvXYCcanBlKGi+D59/jyeGQ8ip58cAsgA+Z/KY7ildEsNtCz4eIqIrQm6DZeVtzVwlF65wH00PKg6Lbm5Gj8oiAwZIW6ezJ22CNOA5bYx2gpKoTCUMOJOZZtvFZhnIkQiw/hyR5dyAdNhvLa50DP0gnWwViMD762X1qDVh4waho+qNNZQ1mqoM/DP7V+cjgUBkbDDYInuHjBS3gq6KJdeYDW9ViuzYtaB4UQR8EboBOaHRVIkWL9GM35YA1nuFcmCCymB4IyGIkeiA5fgA45m4g0phcTcLeQP11fPf1tiToL2t/HJNJQ/mW/KEL54fcUUHWRfvj4mBYrMxvAl08KsFkPOdQFxoTV/RZ5U5ZIgxu+2cYrSTXNZU6kAWmGgDf6Lyp9jQqLBSgXWq2nHOgoucWEyAVoQMCSAaaph4m10rCLVONqbN6BlUlD0CdLFYkYHhdWk00eKZEiARA3TUoxFR2wAZgiHYvtCUz7sq9Gl8x4mYwEZvQpbopUGemIYvJKBW69KZbizZFfbaV4baEijrA9+Avqji3Y7szT4HLNatbr6px28bZn7vjoyus1kxG9S7lFMCNLMM1a3Fy2F2bRkH4Jmi4LmwVKkokRUtQ3PtjyHQkQdxr1nl3aJrifb+G2HfJik5o77JBSyteC3rLPRdv6nubnvqr8PL4+37IaJPUjD8F7FWnTlZNKBT6HYCWqaR8N7e3htK97kIR1N0/bTcR5kXMSQmoo0+VkSCZJDXV+dM9xuV26ouq+BU2tiZuz2oIw+EcNmr5NpK1etAb4LKAThZdXTZq5E16wjN8tj7d4F2pud5So50+L+y/fvSJAYFevdOzyBjgTyLhofcc1Scr3Kx5174F+nxnUz3mJ1VWG5Uy4xMMSZ2t/PPeNKfS8130QdVGhs+4d9hSb3iq3ND+M8yFxi5fglDmRnu5La9lp/mbuuHTrbBfa1kbdGl1MaTckTfjMEo1ZcM1mBXN13XvdH9+bjZZOJPFfpxmKmiIx+f/zod4e2ZZkG+25xsmwc6LCN+I5slZSeKZ3YZ1RZBX2mUB4s3Z34I67Id0Kgb5FgWyIuUs/q4SRH+5YptbhEbGpUZ3qmvWfoAqPruod9N/M/UEsHCIBCiQAlBAAAAQ4AAFBLAQIUABQACAgIAMawMkqAQokAJQQAAAEOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAFoEAAAAAA==}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5804, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: a5c2fc2b-f7cc-49b9-8383-eccaab09cffc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at exporting_CSV_And_Downloading.ExportExample.testExportAllRecords(ExportExample.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/01/sqzs0xfd19g6m4j7jfygyhr4076zz4/T/testng-eclipse-627877870/testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Pavan\AppData\Local\Temp\testng-eclipse-1978469271\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;handling_authentication_window_popUp.HandlingAuthentication_PopUp&quot;/&gt;
+      &lt;class name=&quot;exporting_CSV_And_Downloading.ExportExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,14 +231,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testBasicAuth_Firefox')
-data.setCell(0, 2, 'handling_authentication_window_popUp.HandlingAuthentication_PopUp')
-data.setCell(0, 3, 27464);
+data.setCell(0, 1, 'testExportAllRecords')
+data.setCell(0, 2, 'exporting_CSV_And_Downloading.ExportExample')
+data.setCell(0, 3, 51);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 51 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -218,10 +264,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">handling_authentication_window_popUp.HandlingAuthentication_PopUp</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testBasicAuth_Firefox</span>
+              <div class="chronological-class-name">exporting_CSV_And_Downloading.ExportExample</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testSetup</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testExportAllRecords</span>
+                <span class="method-start">6445 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 25 09:28:29 IST 2015</td>
+<td>Started on:</td><td>Wed Jan 18 22:06:11 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27488 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6520 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,105 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='handling_authentication_window_popUp.HandlingAuthentication_PopUp.testBasicAuth_Firefox()'><b>testBasicAuth_Firefox</b><br>Test class: handling_authentication_window_popUp.HandlingAuthentication_PopUp</td>
-<td></td>
-<td>27</td>
-<td>handling_authentication_window_popUp.HandlingAuthentication_PopUp@c818063</td></tr>
+<td title='exporting_CSV_And_Downloading.ExportExample.testExportAllRecords()'><b>testExportAllRecords</b><br>Test class: exporting_CSV_And_Downloading.ExportExample</td>
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: Malformed URL: appURL is not a valid URL.
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;pavan&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAMawMkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51XS2/jNhC+91cUPrVAzCSb7mV7SpMUKBA0xabBXhYgKGokMaZIlkNa9r/vUJLjh2Qp2ZNliq+Z7zGjiOC581D8ssi8begfQ1FA+6xMyWqhG+GBgRGZhnxx8XMhNMKvv/8U9ytzEWiOsz6kJRUIHaruP6NJayVn1u9OrkA78LfOITOwpidc0W3W8K+9V7iitYsAm3ApcX0hnNNKiqCsudwsa4SNBH00OhzZLIdja5OzGvsXqhYlXDpT9k+vDsqL9sgq1Lp7clooc7RFjY31+fFJtV4ch2gg0KwVq0JwzFUKq+0yvXYCcanBlKGi+D59/jyeGQ8ip58cAsgA+Z/KY7ildEsNtCz4eIqIrQm6DZeVtzVwlF65wH00PKg6Lbm5Gj8oiAwZIW6ezJ22CNOA5bYx2gpKoTCUMOJOZZtvFZhnIkQiw/hyR5dyAdNhvLa50DP0gnWwViMD762X1qDVh4waho+qNNZQ1mqoM/DP7V+cjgUBkbDDYInuHjBS3gq6KJdeYDW9ViuzYtaB4UQR8EboBOaHRVIkWL9GM35YA1nuFcmCCymB4IyGIkeiA5fgA45m4g0phcTcLeQP11fPf1tiToL2t/HJNJQ/mW/KEL54fcUUHWRfvj4mBYrMxvAl08KsFkPOdQFxoTV/RZ5U5ZIgxu+2cYrSTXNZU6kAWmGgDf6Lyp9jQqLBSgXWq2nHOgoucWEyAVoQMCSAaaph4m10rCLVONqbN6BlUlD0CdLFYkYHhdWk00eKZEiARA3TUoxFR2wAZgiHYvtCUz7sq9Gl8x4mYwEZvQpbopUGemIYvJKBW69KZbizZFfbaV4baEijrA9+Avqji3Y7szT4HLNatbr6px28bZn7vjoyus1kxG9S7lFMCNLMM1a3Fy2F2bRkH4Jmi4LmwVKkokRUtQ3PtjyHQkQdxr1nl3aJrifb+G2HfJik5o77JBSyteC3rLPRdv6nubnvqr8PL4+37IaJPUjD8F7FWnTlZNKBT6HYCWqaR8N7e3htK97kIR1N0/bTcR5kXMSQmoo0+VkSCZJDXV+dM9xuV26ouq+BU2tiZuz2oIw+EcNmr5NpK1etAb4LKAThZdXTZq5E16wjN8tj7d4F2pud5So50+L+y/fvSJAYFevdOzyBjgTyLhofcc1Scr3Kx5174F+nxnUz3mJ1VWG5Uy4xMMSZ2t/PPeNKfS8130QdVGhs+4d9hSb3iq3ND+M8yFxi5fglDmRnu5La9lp/mbuuHTrbBfa1kbdGl1MaTckTfjMEo1ZcM1mBXN13XvdH9+bjZZOJPFfpxmKmiIx+f/zod4e2ZZkG+25xsmwc6LCN+I5slZSeKZ3YZ1RZBX2mUB4s3Z34I67Id0Kgb5FgWyIuUs/q4SRH+5YptbhEbGpUZ3qmvWfoAqPruod9N/M/UEsHCIBCiQAlBAAAAQ4AAFBLAQIUABQACAgIAMawMkqAQokAJQQAAAEOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAFoEAAAAAA==}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5804, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: a5c2fc2b-f7cc-49b9-8383-eccaab09cffc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at exporting_CSV_And_Downloading.ExportExample.testExportAllRecords(ExportExample.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace664070838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace664070838'><pre>org.openqa.selenium.InvalidArgumentException: Malformed URL: appURL is not a valid URL.
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;pavan&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAMawMkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51XS2/jNhC+91cUPrVAzCSb7mV7SpMUKBA0xabBXhYgKGokMaZIlkNa9r/vUJLjh2Qp2ZNliq+Z7zGjiOC581D8ssi8begfQ1FA+6xMyWqhG+GBgRGZhnxx8XMhNMKvv/8U9ytzEWiOsz6kJRUIHaruP6NJayVn1u9OrkA78LfOITOwpidc0W3W8K+9V7iitYsAm3ApcX0hnNNKiqCsudwsa4SNBH00OhzZLIdja5OzGvsXqhYlXDpT9k+vDsqL9sgq1Lp7clooc7RFjY31+fFJtV4ch2gg0KwVq0JwzFUKq+0yvXYCcanBlKGi+D59/jyeGQ8ip58cAsgA+Z/KY7ildEsNtCz4eIqIrQm6DZeVtzVwlF65wH00PKg6Lbm5Gj8oiAwZIW6ezJ22CNOA5bYx2gpKoTCUMOJOZZtvFZhnIkQiw/hyR5dyAdNhvLa50DP0gnWwViMD762X1qDVh4waho+qNNZQ1mqoM/DP7V+cjgUBkbDDYInuHjBS3gq6KJdeYDW9ViuzYtaB4UQR8EboBOaHRVIkWL9GM35YA1nuFcmCCymB4IyGIkeiA5fgA45m4g0phcTcLeQP11fPf1tiToL2t/HJNJQ/mW/KEL54fcUUHWRfvj4mBYrMxvAl08KsFkPOdQFxoTV/RZ5U5ZIgxu+2cYrSTXNZU6kAWmGgDf6Lyp9jQqLBSgXWq2nHOgoucWEyAVoQMCSAaaph4m10rCLVONqbN6BlUlD0CdLFYkYHhdWk00eKZEiARA3TUoxFR2wAZgiHYvtCUz7sq9Gl8x4mYwEZvQpbopUGemIYvJKBW69KZbizZFfbaV4baEijrA9+Avqji3Y7szT4HLNatbr6px28bZn7vjoyus1kxG9S7lFMCNLMM1a3Fy2F2bRkH4Jmi4LmwVKkokRUtQ3PtjyHQkQdxr1nl3aJrifb+G2HfJik5o77JBSyteC3rLPRdv6nubnvqr8PL4+37IaJPUjD8F7FWnTlZNKBT6HYCWqaR8N7e3htK97kIR1N0/bTcR5kXMSQmoo0+VkSCZJDXV+dM9xuV26ouq+BU2tiZuz2oIw+EcNmr5NpK1etAb4LKAThZdXTZq5E16wjN8tj7d4F2pud5So50+L+y/fvSJAYFevdOzyBjgTyLhofcc1Scr3Kx5174F+nxnUz3mJ1VWG5Uy4xMMSZ2t/PPeNKfS8130QdVGhs+4d9hSb3iq3ND+M8yFxi5fglDmRnu5La9lp/mbuuHTrbBfa1kbdGl1MaTckTfjMEo1ZcM1mBXN13XvdH9+bjZZOJPFfpxmKmiIx+f/zod4e2ZZkG+25xsmwc6LCN+I5slZSeKZ3YZ1RZBX2mUB4s3Z34I67Id0Kgb5FgWyIuUs/q4SRH+5YptbhEbGpUZ3qmvWfoAqPruod9N/M/UEsHCIBCiQAlBAAAAQ4AAFBLAQIUABQACAgIAMawMkqAQokAJQQAAAEOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAFoEAAAAAA==}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5804, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: a5c2fc2b-f7cc-49b9-8383-eccaab09cffc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at exporting_CSV_And_Downloading.ExportExample.testExportAllRecords(ExportExample.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>0</td>
+<td>exporting_CSV_And_Downloading.ExportExample@77cd7a0</td></tr>
 </table><p>
 </body>
 </html>

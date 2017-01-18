@@ -1,17 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27488" started-at="2015-05-25T03:58:29Z" finished-at="2015-05-25T03:58:57Z">
+  <suite name="Default suite" duration-ms="6520" started-at="2017-01-18T16:36:11Z" finished-at="2017-01-18T16:36:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27488" started-at="2015-05-25T03:58:29Z" finished-at="2015-05-25T03:58:57Z">
-      <class name="handling_authentication_window_popUp.HandlingAuthentication_PopUp">
-        <test-method status="PASS" signature="testBasicAuth_Firefox()[pri:0, instance:handling_authentication_window_popUp.HandlingAuthentication_PopUp@c818063]" name="testBasicAuth_Firefox" duration-ms="27464" started-at="2015-05-25T09:28:29Z" finished-at="2015-05-25T09:28:57Z">
+    <test name="Default test" duration-ms="6520" started-at="2017-01-18T16:36:11Z" finished-at="2017-01-18T16:36:17Z">
+      <class name="exporting_CSV_And_Downloading.ExportExample">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:exporting_CSV_And_Downloading.ExportExample@77cd7a0]" name="testSetup" is-config="true" duration-ms="6427" started-at="2017-01-18T22:06:11Z" finished-at="2017-01-18T22:06:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBasicAuth_Firefox -->
-      </class> <!-- handling_authentication_window_popUp.HandlingAuthentication_PopUp -->
+        </test-method> <!-- testSetup -->
+        <test-method status="FAIL" signature="testExportAllRecords()[pri:0, instance:exporting_CSV_And_Downloading.ExportExample@77cd7a0]" name="testExportAllRecords" duration-ms="51" started-at="2017-01-18T22:06:17Z" finished-at="2017-01-18T22:06:17Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: appURL is not a valid URL.
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'pavan', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAMawMkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51XS2/jNhC+91cUPrVAzCSb7mV7SpMUKBA0xabBXhYgKGokMaZIlkNa9r/vUJLjh2Qp2ZNliq+Z7zGjiOC581D8ssi8begfQ1FA+6xMyWqhG+GBgRGZhnxx8XMhNMKvv/8U9ytzEWiOsz6kJRUIHaruP6NJayVn1u9OrkA78LfOITOwpidc0W3W8K+9V7iitYsAm3ApcX0hnNNKiqCsudwsa4SNBH00OhzZLIdja5OzGvsXqhYlXDpT9k+vDsqL9sgq1Lp7clooc7RFjY31+fFJtV4ch2gg0KwVq0JwzFUKq+0yvXYCcanBlKGi+D59/jyeGQ8ip58cAsgA+Z/KY7ildEsNtCz4eIqIrQm6DZeVtzVwlF65wH00PKg6Lbm5Gj8oiAwZIW6ezJ22CNOA5bYx2gpKoTCUMOJOZZtvFZhnIkQiw/hyR5dyAdNhvLa50DP0gnWwViMD762X1qDVh4waho+qNNZQ1mqoM/DP7V+cjgUBkbDDYInuHjBS3gq6KJdeYDW9ViuzYtaB4UQR8EboBOaHRVIkWL9GM35YA1nuFcmCCymB4IyGIkeiA5fgA45m4g0phcTcLeQP11fPf1tiToL2t/HJNJQ/mW/KEL54fcUUHWRfvj4mBYrMxvAl08KsFkPOdQFxoTV/RZ5U5ZIgxu+2cYrSTXNZU6kAWmGgDf6Lyp9jQqLBSgXWq2nHOgoucWEyAVoQMCSAaaph4m10rCLVONqbN6BlUlD0CdLFYkYHhdWk00eKZEiARA3TUoxFR2wAZgiHYvtCUz7sq9Gl8x4mYwEZvQpbopUGemIYvJKBW69KZbizZFfbaV4baEijrA9+Avqji3Y7szT4HLNatbr6px28bZn7vjoyus1kxG9S7lFMCNLMM1a3Fy2F2bRkH4Jmi4LmwVKkokRUtQ3PtjyHQkQdxr1nl3aJrifb+G2HfJik5o77JBSyteC3rLPRdv6nubnvqr8PL4+37IaJPUjD8F7FWnTlZNKBT6HYCWqaR8N7e3htK97kIR1N0/bTcR5kXMSQmoo0+VkSCZJDXV+dM9xuV26ouq+BU2tiZuz2oIw+EcNmr5NpK1etAb4LKAThZdXTZq5E16wjN8tj7d4F2pud5So50+L+y/fvSJAYFevdOzyBjgTyLhofcc1Scr3Kx5174F+nxnUz3mJ1VWG5Uy4xMMSZ2t/PPeNKfS8130QdVGhs+4d9hSb3iq3ND+M8yFxi5fglDmRnu5La9lp/mbuuHTrbBfa1kbdGl1MaTckTfjMEo1ZcM1mBXN13XvdH9+bjZZOJPFfpxmKmiIx+f/zod4e2ZZkG+25xsmwc6LCN+I5slZSeKZ3YZ1RZBX2mUB4s3Z34I67Id0Kgb5FgWyIuUs/q4SRH+5YptbhEbGpUZ3qmvWfoAqPruod9N/M/UEsHCIBCiQAlBAAAAQ4AAFBLAQIUABQACAgIAMawMkqAQokAJQQAAAEOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAFoEAAAAAA==}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5804, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: a5c2fc2b-f7cc-49b9-8383-eccaab09cffc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: appURL is not a valid URL.
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'pavan', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAMawMkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51XS2/jNhC+91cUPrVAzCSb7mV7SpMUKBA0xabBXhYgKGokMaZIlkNa9r/vUJLjh2Qp2ZNliq+Z7zGjiOC581D8ssi8begfQ1FA+6xMyWqhG+GBgRGZhnxx8XMhNMKvv/8U9ytzEWiOsz6kJRUIHaruP6NJayVn1u9OrkA78LfOITOwpidc0W3W8K+9V7iitYsAm3ApcX0hnNNKiqCsudwsa4SNBH00OhzZLIdja5OzGvsXqhYlXDpT9k+vDsqL9sgq1Lp7clooc7RFjY31+fFJtV4ch2gg0KwVq0JwzFUKq+0yvXYCcanBlKGi+D59/jyeGQ8ip58cAsgA+Z/KY7ildEsNtCz4eIqIrQm6DZeVtzVwlF65wH00PKg6Lbm5Gj8oiAwZIW6ezJ22CNOA5bYx2gpKoTCUMOJOZZtvFZhnIkQiw/hyR5dyAdNhvLa50DP0gnWwViMD762X1qDVh4waho+qNNZQ1mqoM/DP7V+cjgUBkbDDYInuHjBS3gq6KJdeYDW9ViuzYtaB4UQR8EboBOaHRVIkWL9GM35YA1nuFcmCCymB4IyGIkeiA5fgA45m4g0phcTcLeQP11fPf1tiToL2t/HJNJQ/mW/KEL54fcUUHWRfvj4mBYrMxvAl08KsFkPOdQFxoTV/RZ5U5ZIgxu+2cYrSTXNZU6kAWmGgDf6Lyp9jQqLBSgXWq2nHOgoucWEyAVoQMCSAaaph4m10rCLVONqbN6BlUlD0CdLFYkYHhdWk00eKZEiARA3TUoxFR2wAZgiHYvtCUz7sq9Gl8x4mYwEZvQpbopUGemIYvJKBW69KZbizZFfbaV4baEijrA9+Avqji3Y7szT4HLNatbr6px28bZn7vjoyus1kxG9S7lFMCNLMM1a3Fy2F2bRkH4Jmi4LmwVKkokRUtQ3PtjyHQkQdxr1nl3aJrifb+G2HfJik5o77JBSyteC3rLPRdv6nubnvqr8PL4+37IaJPUjD8F7FWnTlZNKBT6HYCWqaR8N7e3htK97kIR1N0/bTcR5kXMSQmoo0+VkSCZJDXV+dM9xuV26ouq+BU2tiZuz2oIw+EcNmr5NpK1etAb4LKAThZdXTZq5E16wjN8tj7d4F2pud5So50+L+y/fvSJAYFevdOzyBjgTyLhofcc1Scr3Kx5174F+nxnUz3mJ1VWG5Uy4xMMSZ2t/PPeNKfS8130QdVGhs+4d9hSb3iq3ND+M8yFxi5fglDmRnu5La9lp/mbuuHTrbBfa1kbdGl1MaTckTfjMEo1ZcM1mBXN13XvdH9+bjZZOJPFfpxmKmiIx+f/zod4e2ZZkG+25xsmwc6LCN+I5slZSeKZ3YZ1RZBX2mUB4s3Z34I67Id0Kgb5FgWyIuUs/q4SRH+5YptbhEbGpUZ3qmvWfoAqPruod9N/M/UEsHCIBCiQAlBAAAAQ4AAFBLAQIUABQACAgIAMawMkqAQokAJQQAAAEOAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAFoEAAAAAA==}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5804, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: a5c2fc2b-f7cc-49b9-8383-eccaab09cffc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at exporting_CSV_And_Downloading.ExportExample.testExportAllRecords(ExportExample.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExportAllRecords -->
+      </class> <!-- exporting_CSV_And_Downloading.ExportExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

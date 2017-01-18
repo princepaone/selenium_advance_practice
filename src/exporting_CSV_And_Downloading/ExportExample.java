@@ -23,6 +23,8 @@ public class ExportExample {
 
 	@BeforeClass
 	public void testSetup() throws Exception {
+	    System.setProperty("webdriver.gecko.driver","E:\\geckodriver.exe");
+
 		driver = new FirefoxDriver(firefoxProfile());
 		driver.manage().window().maximize();
 	}

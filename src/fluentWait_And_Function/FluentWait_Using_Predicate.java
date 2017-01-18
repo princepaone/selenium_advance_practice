@@ -13,6 +13,7 @@ import com.google.common.base.Predicate;
 
 public class FluentWait_Using_Predicate {
 	public static void main(String[] args) throws InterruptedException {
+	    System.setProperty("webdriver.gecko.driver","E:\\geckodriver.exe");
 
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://toolsqa.com/automation-practice-switch-windows/");
